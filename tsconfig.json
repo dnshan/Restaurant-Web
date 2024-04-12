@@ -27,7 +27,7 @@
     "paths": {
       "@app_assets/*":["src/assets/*"],
       "@app_constants/*":["src/constants/*"],
-      "@app_styles/*":["src/styles/*"],
+      "@app_container/*":["src/container/*"],
       "@app_components/*":["src/components/*"],
 
     },
