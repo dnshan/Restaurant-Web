@@ -20,6 +20,10 @@ import award05 from '@app_assets/award05.png';
 import sign from '@app_assets/sign.png';
 import quote from '@app_assets/quote.png';
 import gericht from '@app_assets/gericht.png';
+import meal001 from '@app_assets/meal001.jpg'
+import vitoPizza from '@app_assets/VitoPizza.png'
+import PizzaHero from '@app_assets/PizzaHero.png'
+import PizzaMenu from '@app_assets/Pizzamenu.jpg'
 
 export default {
   bg,
@@ -44,4 +48,8 @@ export default {
   sign,
   quote,
   gericht,
+  meal001,
+  vitoPizza,
+  PizzaHero,
+  PizzaMenu
 };
