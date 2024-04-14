@@ -29,6 +29,8 @@
       "@app_constants/*":["src/constants/*"],
       "@app_container/*":["src/container/*"],
       "@app_components/*":["src/components/*"],
+      "@app_pages/*":["src/pages/*"],
+
 
     },
 
