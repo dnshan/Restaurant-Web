@@ -1,35 +1,31 @@
-import React from "react";
-import '@app_components/Form/global.css'
+import { FiSend } from "react-icons/fi";
 
-const Button01 = () => {
-  return (
-    <div className="grid min-h-[200px] place-content-center bg-slate-900 p-4">
-      <DrawOutlineButton>Hover me</DrawOutlineButton>
-    </div>
-  );
-};
+// const ButtonWrapper = () => {
+//   return (
+//     <div className="bg-slate-100 min-h-[200px] flex items-center justify-center">
+//       <NeumorphismButton />
+//     </div>
+//   );
+// };
 
-export const DrawOutlineButton = ({ children, ...rest }) => {
+export const NeumorphismButton = () => {
   return (
     <button
-      {...rest}
-      className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-indigo-300"
+      className={`
+        px-4 py-2 rounded-full 
+        flex items-center gap-2 
+        text-slate-500
+        shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
+        
+        transition-all
+
+        hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
+        hover:text-violet-500
+    `}
     >
-      <span>{children}</span>
-
-      {/* TOP */}
-      <span className="absolute left-0 top-0 h-[2px] w-0 bg-indigo-300 transition-all duration-100 group-hover:w-full" />
-
-      {/* RIGHT */}
-      <span className="absolute right-0 top-0 h-0 w-[2px] bg-indigo-300 transition-all delay-100 duration-100 group-hover:h-full" />
-
-      {/* BOTTOM */}
-      <span className="absolute bottom-0 right-0 h-[2px] w-0 bg-indigo-300 transition-all delay-200 duration-100 group-hover:w-full" />
-
-      {/* LEFT */}
-      <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-indigo-300 transition-all delay-300 duration-100 group-hover:h-full" />
+      <FiSend />
+      <span>Hover Me</span>
     </button>
   );
 };
 
-export default Button01;

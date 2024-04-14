@@ -149,3 +149,12 @@
         width: 110px;
     }
 }
+
+.app__login-header-h1{
+    font-family: var(--font-base);
+    color: var(--color-black);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 70px;
+  }

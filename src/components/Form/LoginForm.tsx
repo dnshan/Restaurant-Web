@@ -1,6 +1,8 @@
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import { DrawOutlineButton } from './Button';
+// import { NeumorphismButton } from './Button';
+import Button from 'react-bootstrap/Button';
+
 
 
 
@@ -18,7 +20,8 @@ function LoginForm() {
       <FloatingLabel controlId="floatingPassword" label="Password">
         <Form.Control type="password" placeholder="Password" />
 
-        <DrawOutlineButton>Login</DrawOutlineButton>
+       <div style={{marginTop: '15px'}}><Button variant="outline-dark">Log In</Button>{' '}</div>
+ 
 
   
       </FloatingLabel>

@@ -1,7 +1,7 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '@app_constants/images';
-import Modal from '@app_pages/Login';
+import Modal from '@app_pages/LoginModal';
 import LoginForm from '@app_components/Form/LoginForm';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Add this line at the top of your file
 
@@ -67,7 +67,7 @@ const Navbar = () => {
             {isModalOpen && (
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
           {/* Modal content goes here, such as a login form */}
-          <h2>Log In</h2>
+          <h2 className='app__login-header-h1'>Log In</h2>
           <LoginForm/>
           {/* Log in form or content */}
         </Modal>

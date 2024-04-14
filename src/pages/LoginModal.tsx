@@ -17,7 +17,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     }}>
       <div style={{
         padding: 20,
-        background: '#fff',
+        background: '#746B4A',
         borderRadius: 5,
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         width: '80%',
